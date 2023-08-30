@@ -12,6 +12,7 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
+// use the maven central repository to download all plugins
 repositories {
     mavenCentral()
 }
@@ -38,8 +39,8 @@ sonarqube {
     properties {
         property "sonar.sourceEncoding", "UTF-8"
                 property "sonar.projectName", "Gradle-JavaWebApp-3"
-                property "sonar.host.url", "http://172.31.5.173:9000"
-                property "sonar.login", "ed7f1ae74cf8b693cadbd47043d4b9ed5ef50913"
+                property "sonar.host.url", "http://172.31.62.115:9000"
+                property "sonar.login", "d0ed1e7a19f54acaddc0f65c7c011352f6a05a7b"
     }
 }
 
@@ -54,7 +55,7 @@ publishing {
     }
     repositories {
         maven {
-            url = "http://172.31.11.166:8081/repository/gradle-java-webapp-repository/"
+            url = "http://172.31.57.164:8081/repository/gradle-java-webapp-repository/"
             credentials {
                 username "admin"
                 password "admin"
